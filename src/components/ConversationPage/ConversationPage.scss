@@ -1,0 +1,88 @@
+.messagesContainer {
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(152, 194, 161, 0.1);
+  width: 90vw;
+  height: 88vh;
+  position: relative;
+
+  .messagesContainer__title {
+    color: #333;
+    font-size: 1.5rem;
+  }
+
+  .messagesContainer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #eee;
+
+    div {
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.myMessage {
+      background-color: rgba(149, 194, 61, 0.2);
+    }
+    &.interlocutorMessage {
+      text-align: right;
+    }
+    .messagesContainer__list-Header {
+      font-weight: bold;
+      font-size: small;
+      margin-bottom: -0.2rem;
+    }
+    .messagesContainer__list-date {
+      font-size: small;
+      font-style: italic;
+    }
+  }
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+
+  input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  button {
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #95c23d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #289659;
+    }
+  }
+}

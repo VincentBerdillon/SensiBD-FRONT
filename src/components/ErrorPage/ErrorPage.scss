@@ -1,0 +1,21 @@
+@use '../../styles/variables' as v;
+
+.not-found {
+  margin: 1.5rem;
+  text-align: center;
+
+  h1 {
+    color: #000;
+    font-size: 5.5625rem;
+    height: 1rem * 8;
+    line-height: 1.5rem * 8;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  i {
+    color: #666;
+  }
+}

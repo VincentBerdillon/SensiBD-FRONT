@@ -1,0 +1,16 @@
+.signupForm {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__address {
+    height: 3.6rem;
+    width: 14.4rem;
+    padding-left: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,65 @@
+@use '../../styles/variables' as v;
+
+.header {
+  width: 100%;
+  padding: 1rem;
+
+  &__topContainer {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+
+    &-logo-container {
+      width: 7rem;
+    }
+
+    &-credit {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-logo {
+        width: 2.5rem;
+      }
+    }
+  }
+  &__searchContainer {
+    display: flex;
+    align-items: end;
+    gap: 0.2rem;
+    width: 100%;
+
+    &-searchBar {
+      flex: 1;
+
+      .MuiTextField-root {
+        width: 100%;
+      }
+
+      .MuiInputBase-root {
+        height: 2.5rem;
+      }
+    }
+  }
+}
+
+.css-fiov70 {
+  min-height: 30px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+.drawer {
+  margin-top: 0, 5rem;
+  padding: 1rem;
+  &__categories {
+    margin-bottom: 1rem;
+  }
+  &__audience {
+    margin-bottom: 1rem;
+  }
+  &__condition {
+    margin-bottom: 1rem;
+  }
+}
